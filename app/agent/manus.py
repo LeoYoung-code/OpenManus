@@ -30,5 +30,6 @@ class Manus(ToolCallAgent):
     available_tools: ToolCollection = Field(
         default_factory=lambda: ToolCollection(
             PythonExecute(), GoogleSearch(), BrowserUseTool(), FileSaver(), Terminate()
+            # PythonExecute(), BaiduSearch(), BrowserUseTool(), FileSaver(), Terminate()
         )
     )
